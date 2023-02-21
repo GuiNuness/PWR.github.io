@@ -477,8 +477,9 @@ h2{
 
     nav ul li ul{
         display: none;
-        background-color: rgb(0, 0, 0);
+        background-color: #000000;
         padding: 12px;
+        margin-left: -60px;
         border-radius: 0px 0px 5px 5px;
         position: absolute;
     }
@@ -489,12 +490,10 @@ h2{
     }
 
     nav ul li ul li{
-        width: auto;
-        border-radius: 4px;
+        display: flex;
+        justify-content: center;
     }
-    nav ul li ul li a{
-        padding: 8px 10px;
-    }
+    
     /*Banner*/
     .banner{
         height: 350px;
