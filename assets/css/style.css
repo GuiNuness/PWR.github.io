@@ -486,7 +486,7 @@ h2{
         position: absolute;
     }
 
-    nav ul li:active ul{
+    nav ul li:hover ul{
         display: flex;
         flex-direction: column;
     }
