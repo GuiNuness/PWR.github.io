@@ -470,9 +470,6 @@ h2{
         list-style: none;
         float: right;
         position: relative;
-    }
-
-    nav ul li a{
         display: block;
         padding: 11px 14px;
         text-decoration: none;
