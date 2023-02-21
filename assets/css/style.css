@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Cabeçalho*/
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+#logoImg{
+    width: 65px;
+    height: 54px;
+    margin-top: -2px;
+}
+
+.menu{
+    max-width: auto;
+}
+
+ul{
+    display: flex;
+}
+
+ul img{
+    display: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: "Dancing Script";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: -2px;
+    padding: 0px 7px 5px 7px;
+    border-bottom: 2px solid #000;
+}
+
+ul li a:hover{
+    transition: 0.5s;
+    border-bottom: 2px solid #812fd2;
+}
+
+/*Banner*/
+.banner{
+    width: 100%;
+    height: 655px;
+    background: url("../images/imgBanner.png");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text{
+    height: 100%;
+    width: 990px;
+    display: flex;
+    align-items: center;
+}
+
+.text h1{
+    font-family: "Source Serif Pro";
+    color: #fff;
+    font-size: 96px;
+    width: 484px;
+    height: auto;
+    line-height: 100px;
+}
+
+.button{
+    background-color: #5CC0D6;
+    width: 160px;
+    height: 36px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(113, 229, 250);
+}
+
+.button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Source Serif Pro';
+    font-weight: 600;
+    padding: 5px 15px 5px 15px;
+}
+
+/*História*/
+.historia{
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Source Serif Pro';
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Source Serif Pro';
+}
+
+.hist{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hist p{
+    width: 450px;
+    
+}
+
+.hist img{
+    width: 330px;
+    height: 375px;
+    box-shadow: 0px 0px 15px 4px rgb(255, 255, 255);
+    border-radius: 35px;
+}
+
+/*Unidades*/
+.unidades{
+    height: auto;
+    width: 100%;
+    background-color: #391061;
+    font-family: 'Source Serif Pro';
+    color: #fff;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: 
+        "foto1 city1"
+        "city2 foto2"
+        "foto3 city3"
+    ;
+}
+
+#map1{
+    grid-area: foto1;
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    box-shadow: 15px 15px 10px #000;
+}
+
+#map2{
+    grid-area: foto2;
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    box-shadow: -15px 15px 10px #000;
+}
+
+#map3{
+    grid-area: foto3;
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 15px 15px 10px #000;
+}
+
+
+.city1{
+    margin-top: -50px;
+    grid-area: city1;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.city1 p{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.city2{
+    margin-top: -50px;
+    grid-area: city2;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.city2 p{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.city3{
+    grid-area: city3;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.city3 p{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/*Planos*/
+.planos{
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Source Serif Pro';
+    color: #fff;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.card{
+    width: 225px;
+    background-color: #590FA39C;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 6px 3px rgb(255, 255, 255);
+}
+
+.card h1{
+    padding-top: 35px;
+}
+
+.card .value{
+    font-size: 32px;
+    font-family: "Source Serif Pro";
+    font-weight: 700;
+}
+
+.card p{
+    font-size: 14px;
+    margin-top: 25px;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+}
+
+.card h3{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#card1{
+    margin-top: 60px;
+}
+#card2{
+    margin-top: 35px;
+}
+
+.card h4{
+    width: 175px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.card h5{
+    margin-top: 5px;
+    margin-bottom: 35px;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/*Contato*/
+.contato{
+    background-color: #280b44;
+    width: auto;
+    height: 100%;
+    font-family: 'Source Serif Pro';
+    color: #fff;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contats{
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.contato1, .contato2, .contato3{
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    color:#000;
+}
+
+.contato1 h1, .contato2 h1, .contato3 h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contato1 a, .contato2 a, .contato3 a{
+    text-decoration: none;
+    color: #812fd2;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+}
+
+#wppIcon{
+    margin-right: 20px;
+}
+
+@media (max-width:1024px) {
+
+    /*Banners*/
+    .banner{
+        display: flex;
+        justify-content: center;
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .text{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    .button{
+        margin: auto;
+    }
+
+    /*História*/
+    .hist{
+        flex-direction: column;
+    }
+
+    .hist p{
+        text-align: center;
+    }
+
+    .hist img{
+        margin-top: 35px;
+    }
+
+    /*Unidades*/
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .city1{
+        margin-top: -10px;
+    }
+
+    .city1 p, .city2 p, .city3 p{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .city2{
+        margin-top: 10px;
+    }
+
+    /*Planos*/
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .card{
+        margin-bottom: 30px;
+    }
+
+    /*Contato*/
+    .contats{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .contato1, .contato2{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /*Cabeçalho*/
+    nav ul img{
+        display: block;
+    }
+
+    nav ul li{
+        list-style: none;
+        float: right;
+        position: relative;
+    }
+
+    nav ul li a{
+        display: block;
+        padding: 11px 14px;
+        text-decoration: none;
+    }
+
+    nav ul li ul{
+        display: none;
+        background-color: rgb(0, 0, 0);
+        padding: 12px;
+        border-radius: 0px 0px 5px 5px;
+        position: absolute;
+    }
+
+    nav ul li:active ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li ul li{
+        width: auto;
+        border-radius: 4px;
+    }
+    nav ul li ul li a{
+        padding: 8px 10px;
+    }
+    /*Banner*/
+    .banner{
+        height: 350px;
+    }
+
+    .text{
+        width: 280px;
+        margin-bottom: 35px;
+    }
+
+    .text h1{
+        font-size: 48px;
+        line-height: normal;
+    }
+
+    /*História*/
+    .hist p{    
+        width: 300px;
+        margin-top: -30px;
+    }
+
+    .hist img{
+        width: 290px;
+        height: 335px;
+    }
+
+    /*Unidades*/
+    .city1, .city2, .city3{
+        margin-top: -10px;
+        align-items: center;
+        font-size: 28px;
+    }
+
+    .city1 p, .city2 p, .city3 p{
+        width: 175px;
+    }
+
+    #map1, #map2, #map3{
+        width: auto;
+    }
+}
