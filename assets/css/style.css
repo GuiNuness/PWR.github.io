@@ -32,38 +32,39 @@ body{
     margin-top: -2px;
 }
 
+
 .menu{
-    max-width: auto;
+    display: flex;
+    align-items: center;
 }
 
-ul{
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+nav ul{
     display: flex;
 }
 
-ul img{
-    display: none;
-}
-
-ul li{
-    list-style: none;
-}
-
-ul li a{
+nav a{
+    display: block;
+    padding: 7px 10px 5px 10px;
     text-decoration: none;
+    color: #ffffff;
     font-family: "Dancing Script";
-    font-style: normal;
-    font-weight: 700;
     font-size: 20px;
-    color: #fff;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: -2px;
-    padding: 0px 7px 5px 7px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #000000;
 }
 
-ul li a:hover{
-    transition: 0.5s;
+nav .active a,
+nav a:hover{
+    color: #fff;
+}
+
+nav a:hover{
     border-bottom: 2px solid #812fd2;
 }
 
@@ -142,7 +143,6 @@ h2{
 
 .hist p{
     width: 450px;
-    
 }
 
 .hist img{
@@ -375,6 +375,20 @@ h2{
     margin-right: 20px;
 }
 
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{
+    height: 2px;
+    background-color: #812fd2;
+}
+
 @media (max-width:1024px) {
 
     /*Banners*/
@@ -462,38 +476,34 @@ h2{
 @media (max-width: 500px) {
 
     /*Cabeçalho*/
-    nav ul img{
-        display: block;
+    .menuMobile{
+        margin: auto;
+        margin-left: 50px;
     }
 
-    nav ul li{
-        list-style: none;
-        float: right;
-        position: relative;
-        display: block;
-        padding: 11px 14px;
-        text-decoration: none;
-    }
-
-    nav ul li ul{
+    nav ul{
+        flex-direction: column;
         display: none;
-        background-color: #000000;
-        padding: 12px;
-        margin-left: -60px;
-        border-radius: 0px 0px 5px 5px;
         position: absolute;
+        width: 120px;
+        background-color: #000;
+        border-radius: 5px;
     }
 
-    nav ul li:hover ul{
+    header{
+        height: auto;
+    }
+
+    .menuMobile{
         display: flex;
         flex-direction: column;
-    }
-
-    nav ul li ul li{
-        display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
     
+    nav ul li{
+        text-align: center;
+    }
+
     /*Banner*/
     .banner{
         height: 350px;

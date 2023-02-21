@@ -7,6 +7,18 @@
     <title>Power Academia</title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click",function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -16,16 +28,17 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
-                        <li><img src="./assets/images/menu.png" alt="">
-                            <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="#historia">História</a></li>
-                                <li><a href="#uni">Unidades</a></li>
-                                <li><a href="#planos">Planos</a></li>
-                                <li><a href="#contato">Contato</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="./index.html">Home</a></li> 
+                        <li><a href="#historia">História</a></li>
+                        <li><a href="#uni">Unidades</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#contato">Contato</a></li> 
                     </ul>
                 </nav>
             </div>
